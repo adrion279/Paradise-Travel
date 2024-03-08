@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Title</title>
+        <title>Paradise Travel</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta
@@ -42,7 +42,6 @@
                         <ul class="navbar-nav me-auto mx-auto ">
                             <li class="nav-item fs-1 text-white fw-bold">   
                                 Paradise Travel
-
                             </li>
                             
                         
@@ -70,18 +69,17 @@
             
         </header>
         <main>
-            <div class="position-relative overflow-hidden text-center">
-                <img src="img/fondocarousel.jpg" class="img-fluid" width="100%" alt="">
-                <div id="carouselId" class="carousel slide position-absolute top-50 start-50 translate-middle w-50" data-bs-ride="carousel">
-                   
+            <div class="container-fluid azul_medio  position-relative d-flex">
+                <div id="carouselId" class="carousel slide   w-50 d-inline" data-bs-ride="carousel">
                     <div class="carousel-inner" >
                         <div class="carousel-item active">
-                            <h2 class="text-white">Nueva York</h2>
+                            <h2 class="text-white mx-auto me-auto ">Nueva York</h2>
                             <img
                                 src="img/carousel1.jpg"
                                 class="w-100 d-block"
                                 
                             />
+                            <h2></h2>
                         </div>
                         <div class="carousel-item">
                             <h2 class="text-white">Paris</h2>
@@ -90,6 +88,7 @@
                                 class="w-100 d-block"
                                
                             />
+                            <h2></h2>
                         </div>
                         <div class="carousel-item">
                             <h2 class="text-white">El Vaticano</h2>
@@ -98,6 +97,7 @@
                                 class="w-100 d-block"
                                 
                             />
+                            <h2></h2>
                         </div>
                     </div>
                     <button
@@ -119,8 +119,54 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-                
-                 </div>
+                <div class="container-fluid d-inline w-50 my-5">
+                    <div class="accordion   justify-content-center w-100" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button
+                                class="accordion-button"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne"
+                                aria-expanded="true"
+                                aria-controls="collapseOne"
+                            >
+                                Reserva
+                            </button>
+                        </h2>
+                        <div
+                            id="collapseOne"
+                            class="accordion-collapse collapse show"
+                            aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample"
+                        >
+                            <div class="accordion-body">
+                                <div class="mb-3">
+                                    <label for="" class="form-label">Alojamiento</label>
+                                    <select
+                                        class="form-select form-select-lg"
+                                        name=""
+                                        id=""
+                                    >
+                                        <option selected>Seleccione una opcion</option>
+                                        <option value="">Apartamento</option>
+                                        <option value="">Hostal</option>
+                                        <option value="">Hotel ⭐</option>
+                                        <option value="">Hotel ⭐⭐</option>
+                                        <option value="">Hotel ⭐⭐⭐</option>
+                                        <option value="">Hotel ⭐⭐⭐⭐</option>
+                                        <option value="">Hotel ⭐⭐⭐⭐⭐</option>
+                                        
+                                    </select>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    </div>
+                </div>
+                 
             </div>
         </main>
         <footer>
