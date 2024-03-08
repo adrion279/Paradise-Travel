@@ -56,12 +56,15 @@
                             >
                                 Inciar Sesion
                             </button>
-                            <button
-                                class="btn bg-warning my-2 my-sm-0 mx-2 texto_azul_oscuro"
-                                type="submit"
-                            >
-                                Registro
-                            </button>
+                           <a
+                            name=""
+                            id=""
+                            class="btn bg-warning my-2 my-sm-0 m-s-4 texto_azul_oscuro mx-2"
+                            href="registro.html"
+                            role="button"
+                            >Registro</a
+                           >
+                           
                         </form>
                     </div>
                 </div>
@@ -69,7 +72,7 @@
             
         </header>
         <main>
-            <div class="container-fluid azul_medio  position-relative d-flex">
+            <div class="container-fluid azul_medio h-100 position-relative d-flex">
                 <div id="carouselId" class="carousel slide   w-50 d-inline" data-bs-ride="carousel">
                     <div class="carousel-inner" >
                         <div class="carousel-item active">
@@ -121,26 +124,37 @@
                 </div>
                 <div class="container-fluid d-inline w-50 my-5">
                     <div class="accordion   justify-content-center w-100" id="accordionExample">
-                        <div class="accordion-item">
+                        <div class="accordion-item azul_claro">
                             <h2 class="accordion-header" id="headingOne">
                                 <button
-                                class="accordion-button"
+                                class="accordion-button azul_oscuro"
                                 type="button"
                                 data-bs-toggle="collapse"
                                 data-bs-target="#collapseOne"
                                 aria-expanded="true"
                                 aria-controls="collapseOne"
                             >
-                                Reserva
+                                ¡RESERVA YA!
                             </button>
                         </h2>
                         <div
                             id="collapseOne"
-                            class="accordion-collapse collapse show"
+                            class="accordion-collapse collapse "
                             aria-labelledby="headingOne"
                             data-bs-parent="#accordionExample"
                         >
                             <div class="accordion-body">
+                                <form action="">
+                                <div class="mb-3">
+                                    <label for="fecha">Fecha de Entrada:</label>
+                                    <input type="date" id="fecha" name="fecha">
+                                    
+                                </div>
+                                <div class="mb-3">
+                                    <label for="fecha">Fecha de Salida: </label>
+                                    <input type="date" id="fecha" name="fecha">
+                                    
+                                </div>
                                 <div class="mb-3">
                                     <label for="" class="form-label">Alojamiento</label>
                                     <select
@@ -156,23 +170,179 @@
                                         <option value="">Hotel ⭐⭐⭐</option>
                                         <option value="">Hotel ⭐⭐⭐⭐</option>
                                         <option value="">Hotel ⭐⭐⭐⭐⭐</option>
-                                        
                                     </select>
                                 </div>
+                                <div class="mb-3">
+                                    <label for="" class="form-label">Transporte</label>
+                                    <select
+                                        class="form-select form-select-lg"
+                                        name=""
+                                        id=""
+                                    >
+                                        <option selected>Seleccione una opcion</option>
+                                        <option value="">Avion</option>
+                                        <option value="">Tren</option>
+                                        <option value="">Autobus</option>
+        
+                                    </select>
+                                </div>
+                                <div class="form-check d-flex mb-3">
+                                    <p class="d-inline" >-  Alquiler de vehiculo: </p>
+                                    <input
+                                        class="form-check-input mx-3 d-inline"
+                                        name=""
+                                        id=""
+                                        type="checkbox"
+                                        value="checkedValue"
+                                        aria-label="Text for screen reader"
+                                    />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="" class="form-label">Actividades</label>
+                                    <select
+                                        class="form-select form-select-lg"
+                                        name=""
+                                        id=""
+                                    >
+                                        <option selected>Seleccione una opcion</option>
+                                        <option value="">Adultos</option>
+                                        <option value="">Niños</option>
+                                        <option value="">Adultos + Niños</option>
+                                        <option value="">Personas de la 3º edad</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="" class="form-label">Destino</label>
+                                    <select
+                                        class="form-select form-select-lg"
+                                        name=""
+                                        id=""
+                                    >
+                                        <option selected>Seleccione una opcion</option>
+                                        <option value="">Playa</option>
+                                        <option value="">Montaña</option>
+                                        <option value="">Pueblo</option>
+                                        <option value="">Ciudad</option>
+                                    </select>
+                                </div>
+                                <a
+                                    name=""
+                                    id=""
+                                    class="btn btn-warning"
+                                    href="#"
+                                    role="button"
+                                    >Buscar</a
+                                >
                                 
+                                </form>
                             </div>
                         </div>
                     </div>
                     
                     </div>
+                    <div class="accordion my-4" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button
+                                    class="accordion-button"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo"
+                                    aria-expanded="true"
+                                    aria-controls="collapseTwo"
+                                >
+                                   CONFIRMA TUS DATOS
+                                </button>
+                            </h2>
+                            <div
+                                id="collapseTwo"
+                                class="accordion-collapse collapse show"
+                                aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample"
+                            >
+                                <div class="accordion-body">
+                                   <div class="mb-3">
+                                    <label for="" class="form-label">Email</label>
+                                    <input
+                                        type="email"
+                                        class="form-control"
+                                        name=""
+                                        id=""
+                                        aria-describedby="emailHelpId"
+                                        
+                                    />
+                                    <small id="emailHelpId" class="form-text text-muted"
+                                        ></small
+                                    >
+                                   </div>
+                                   <form class="row g-3 needs-validation" novalidate>
+                                     <div class="col-md-4">
+                                       <label for="validationCustom01" class="form-label">Nombre</label>
+                                       <input type="text" class="form-control" id="validationCustom01" value="" required>
+                                       <div class="valid-feedback">
+                                         Looks good!
+                                       </div>
+                                     </div>
+                                     <div class="col-md-4">
+                                       <label for="validationCustom02" class="form-label">Apellidos</label>
+                                       <input type="text" class="form-control" id="validationCustom02" value="" required>
+                                       <div class="valid-feedback">
+                                         Looks good!
+                                       </div>
+                                     </div>
+                                     <div class="col-md-4">
+                                       <label for="validationCustomUsername" class="form-label">Telefono</label>
+                                       <div class="input-group">
+                                         <span class="input-group-text" id="inputGroupPrepend"></span>
+                                         <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                                         <div class="invalid-feedback">
+                                           
+                                         </div>
+                                       </div>
+                                     </div>
+                                     <div class="col-md-4">
+                                        <label for="validationCustom01" class="form-label">Codigo postal</label>
+                                        <input type="text" class="form-control" id="validationCustom01" value="" required>
+                                        <div class="valid-feedback">
+                                          Looks good!
+                                        </div>
+                                      </div>
+                                      <div class="col-md-4">
+                                        <label for="validationCustom02" class="form-label">Localidad</label>
+                                        <input type="text" class="form-control" id="validationCustom02" value="" required>
+                                        <div class="valid-feedback">
+                                          Looks good!
+                                        </div>
+                                      </div>
+                                      <div class="col-md-4">
+                                        <label for="validationCustom02" class="form-label">Direccion</label>
+                                        <input type="text" class="form-control" id="validationCustom02" value="" required>
+                                        <div class="valid-feedback">
+                                          Looks good!
+                                        </div>
+                                      </div>
+                                     <div class="col-12">
+                                       <button class="btn btn-warning" type="submit">Hecho</button>
+                                     </div>
+                                   </form>
+                                   
+                                
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
                 </div>
                  
             </div>
         </main>
         <footer>
-            <!-- place footer here -->
+            <div class="azul_oscuro w-100">
+            <h3 class="text-white d-flex justify-content-center align-items-center p-4">Adrian Sanchez Garcia</h3>
+            </div>
         </footer>
-        <!-- Bootstrap JavaScript Libraries -->
+        
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
