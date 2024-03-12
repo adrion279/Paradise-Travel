@@ -20,3 +20,10 @@ color: #27374D;
 .container90{
 width: 85%;
 }
+@font-face {
+    font-family: "Playfair_Display";
+    src: url(font/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf)format(truetype);
+}
+body{
+    font-family: "Playfair_Display" , sans-serif;
+}
